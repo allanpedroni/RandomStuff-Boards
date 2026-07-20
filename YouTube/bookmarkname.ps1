@@ -43,7 +43,7 @@ $updated = foreach ($line in $srt) {
 
     if ($line -match "<b>.*?</b>") {
         if ($nameIndex -lt $names.Count) {
-            $title = $names[$nameIndex]
+            $title = ($names[$nameIndex] -replace '\s*[-–—].*$', '').Trim()
             $replacement = "<b>$title</b>"
 
             if ($null -ne $currentStartTimestamp) {
