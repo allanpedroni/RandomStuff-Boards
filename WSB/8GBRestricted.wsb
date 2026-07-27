@@ -1,0 +1,12 @@
+<Configuration>
+<Networking>Disable</Networking>
+<ProtectedClient>Enable</ProtectedClient>
+<MappedFolders>
+  <MappedFolder>
+    <HostFolder>S:\Scratch</HostFolder>
+    <SandboxFolder>C:\ExtData</SandboxFolder>
+    <ReadOnly>true</ReadOnly>
+  </MappedFolder>
+</MappedFolders>
+<MemoryInMB>8192</MemoryInMB>
+</Configuration>
