@@ -5,7 +5,6 @@ import os
 
 # export AZURE_OPENAI_ENDPOINT="https://YOUR-RESOURCE.openai.azure.com" #bash
 # $env:AZURE_OPENAI_ENDPOINT="https://foundryagentproject-resource.services.ai.azure.com/openai/v1" #PowerShell
-# $env:AZURE_OPENAI_DEPLOYMENT="gpt-4.1" #PowerShell
 
 ENDPOINT = os.environ["AZURE_OPENAI_ENDPOINT"]
 DEPLOYMENT = "gpt-4.1"
