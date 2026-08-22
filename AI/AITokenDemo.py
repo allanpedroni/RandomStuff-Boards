@@ -11,8 +11,9 @@ ENDPOINT = os.environ["AZURE_OPENAI_ENDPOINT"]
 DEPLOYMENT = "gpt-4.1"
 token_provider = get_bearer_token_provider(DefaultAzureCredential(), "https://ai.azure.com/.default")
 
+#Only show top 10 to keep the display on screen.
 TOP_N = 10
-# Start with low variability for the first demonstration.
+# Start with low variability for the first demonstration. 1.2 would be more creative
 temperature = 0.2
 
 CONTINUATION_INSTRUCTIONS = (
